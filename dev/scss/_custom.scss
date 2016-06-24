@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800);
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('../assets/fonts/Georgia.eot?#iefix') format('embedded-opentype'),  url('../assets/fonts/Georgia.woff') format('woff'), url('../assets/fonts/Georgia.ttf')  format('truetype'), url('../assets/fonts/Georgia.svg#Georgia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia-Italic';
+  src: url('../assets/fonts/Georgia-Italic.eot?#iefix') format('embedded-opentype'),  url('../assets/fonts/Georgia-Italic.woff') format('woff'), url('../assets/fonts/Georgia-Italic.ttf')  format('truetype'), url('../assets/fonts/Georgia-Italic.svg#Georgia-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia-Bold';
+  src: url('../assets/fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),  url('../assets/fonts/Georgia-Bold.woff') format('woff'), url('../assets/fonts/Georgia-Bold.ttf')  format('truetype'), url('../assets/fonts/Georgia-Bold.svg#Georgia-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia-BoldItalic';
+  src: url('../assets/fonts/Georgia-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('../assets/fonts/Georgia-BoldItalic.woff') format('woff'), url('../assets/fonts/Georgia-BoldItalic.ttf')  format('truetype'), url('../assets/fonts/Georgia-BoldItalic.svg#Georgia-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$black: #262626;
+$white: #FFFFFF;
+$gray: #646464;
+$red: #e05553;
+$grayson: #eeecec;
+
+@mixin smooth {
+  transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition:all .3s;
+}
+.row {
+	max-width: 65em;
+}
+body {
+	color: $black;
+}
+.content {
+	padding-top: 6em;
+	height: 100%;
+}
+a {
+	@include smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	span {
+		color: $red;
+		margin: 0 0.35em;
+	}
+}
+h1 {
+	font-size: 5rem;
+	line-height: 1em;
+}
+p {
+	font-size: 0.85em;
+	&.subtitle {
+		font-size: 1.5em;
+		color: $gray;
+		line-height: 1.25em;
+		&:after {
+			content: ' ';
+			border-bottom: 4px solid $red;
+			width: 1.5em;
+			display: block;
+			margin-top: 0.75em;
+		}
+	}
+}
+.geo {
+	font-family: 'Georgia';
+}
+.geoit {
+	font-family: 'Georgia-Italic';
+}
+.geob {
+	font-family: 'Georgia-Bold';
+}
+.geobit {
+	font-family: 'Georgia-BoldItalic';
+}
+
+#home {
+	background-image: url("../assets/img/bg.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	.top-bar {
+		background-color: transparent;
+		ul {
+			li {
+				a {
+					color: $white;
+					&.active {
+						&:after {
+							border-bottom: 2px solid $white;
+							width: 1.25em;
+						}
+					}
+					&:hover {
+						&:after {
+							border-bottom: 2px solid $white;
+							width: 1.25em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.top-bar {
+	font-family: 'Open Sans', sans-serif;
+	padding: 2em 2em 0;
+	background-color: $white;
+	z-index: 99;
+	&.fixed {
+		position: fixed;
+		width: 100%;
+	}
+	img {
+		max-width: 174px;
+	}
+	ul {
+		background-color: transparent;
+		font-size: 0.85em;
+		li {
+			a {
+				text-align: center;
+				color: $black;
+				&:after {
+					content: ' ';
+					border-bottom: 2px solid transparent;
+					width: 0em;
+					display: block;
+					margin: 0.75em auto 0;
+					@include smooth;
+				}
+				&.active {
+					&:after {
+						border-bottom: 2px solid $black;
+						width: 1.25em;
+					}
+				}
+				&:hover {
+					&:after {
+						border-bottom: 2px solid $black;
+						width: 1.25em;
+					}
+				}
+			}
+			&.lang {
+				a {
+					margin-left: 3em;
+				}
+			}
+		}
+	}
+	.top-bar-right {
+		margin-top: 1em;
+	}
+}
+.featHome {
+	margin-top: 20%;
+	color: $white;
+}
+section {
+	&.somos {
+		height: 100%;
+		background-image: url('../assets/img/somos.png');
+		.info {
+			margin-top: 22.5%;
+		}
+	}
+	&.equipo {
+		padding: 5em 0;
+		.team {
+			margin-top: 3em;
+			.row {
+				margin-top: 2em;
+			}
+			.detail {
+				background-color: $grayson;
+				padding: 2em;
+				p {
+					font-size: 0.75em;
+				}
+				.subtitle {
+					font-size: 1em;
+				}
+				h3 {
+					line-height: 1em;
+				}
+			}
+		}
+	}
+	&.servicios {
+		height: 100%;
+		background-image: url('../assets/img/servicios.png');
+		.info {
+			margin-top: 22.5%;
+		}
+	}
+	&.servs-list {
+		.int {
+			padding: 5em;
+			.subtitle {
+				color: $black;
+			}
+			ul {
+				list-style: none;
+				margin-left: 0;
+				font-size: 0.75em;
+				li {
+					margin-bottom: 0.5em;
+				}
+			}
+		}
+	}
+}
+footer {
+	background-color: #141414;
+	color: $white;
+	font-family: 'Open Sans', sans-serif;
+	padding: 2em 0;
+	p {
+		font-size: 0.55em;
+		margin-bottom: 0.75em;
+	}
+	.legal {
+		margin-bottom: 1em;
+		a {
+			font-weight: 800;
+			color: $white;
+			font-size: 0.65em;
+			&:last-child {
+				margin-left: 2em;
+			}
+		}
+	}
+	.social {
+		margin-bottom: 1em;
+		a {
+			margin-left: 1em;
+		}
+	}
+}
