@@ -231,6 +231,117 @@ section {
 			}
 		}
 	}
+	&.clientes {
+		padding: 5em 0;
+		background-image: url('../assets/img/px.png');
+	    background-size: contain;
+	    background-repeat: repeat-y;
+		.subtitle {
+			color: $black;
+			span {
+				color: $gray;
+				text-decoration: line-through;
+			}
+		}
+		.clients-list {
+			.row {
+				.columns {
+					margin: 2em 0;
+					margin: 2em 0 5em;
+					text-align: center;
+					img {
+						vertical-align: bottom;
+					}
+				}
+			}
+		}
+	}
+	&.oficinas {
+		padding: 5em 0;
+		background-image: url('../assets/img/map.png');
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: right center;
+	    .info {
+	    	ul {
+	    		list-style: none;
+	    		margin: 3em 0 0;
+	    		li {
+	    			margin-bottom: 2em;
+	    			.city {
+	    				margin-bottom: 1em;
+	    				.line {
+	    					border-bottom: 2px solid $red;
+	    					height: 1.25em;
+	    				}
+	    			}
+	    			.address {
+	    				font-size: 0.85em;
+	    			}
+	    		}
+	    	}
+	    	.subtitle {
+	    		white-space: nowrap;
+	    	}
+	    }
+	}
+	&.contacto {
+		padding: 5em 0;
+		form {
+			label {
+				font-size: 1.25em;
+				margin-top: 1.5em;
+				sup {
+					color: $red;
+				}
+			}
+			input {
+				background-color: $grayson;
+				border: 0;
+				box-shadow: none;
+				height: 2.25em;
+				font-size: 1.25em;
+			}
+			textarea {
+				background-color: $grayson;
+				border: 0;
+				box-shadow: none;
+				height: 6.5em;
+				font-size: 1.25em;
+			}
+			button {
+				font-size: 1.5em;
+				background-color: $black;
+				padding: 0.85em 2.5em;
+				margin-top: 2em;
+				&:active {
+					background-color: $red;
+				}
+				&:hover {
+					background-color: $red;
+				}
+				&:focus {
+					background-color: $red;
+				}
+				&:visited {
+					background-color: $red;
+				}
+			}
+			p {
+				color: $gray;
+				font-size: 1em;
+				line-height: 1.25em;
+				margin: 3.15em 0 0;
+			}
+			.callout.alert {
+				background-color: $red;
+				border: none;
+				p {
+					color: $white;
+				}
+			}
+		}
+	}
 }
 footer {
 	background-color: #141414;
