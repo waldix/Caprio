@@ -63,13 +63,13 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 h1 {
-	font-size: 5rem;
+	font-size: 7.35rem;
 	line-height: 1em;
 }
 p {
-	font-size: 0.85em;
+	// font-size: 0.85em;
 	&.subtitle {
-		font-size: 1.5em;
+		font-size: 1.9em;
 		color: $gray;
 		line-height: 1.25em;
 		&:after {
@@ -95,11 +95,7 @@ p {
 }
 
 #home {
-	background-image: url("../assets/img/bg.png");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+	height: auto;
 	.top-bar {
 		background-color: transparent;
 		ul {
@@ -125,7 +121,7 @@ p {
 }
 .top-bar {
 	font-family: 'Open Sans', sans-serif;
-	padding: 2em 2em 0;
+	padding: 3em 5em 0;
 	background-color: $white;
 	z-index: 99;
 	&.fixed {
@@ -142,6 +138,7 @@ p {
 			a {
 				text-align: center;
 				color: $black;
+				padding: 0.7rem 1.75rem;
 				&:after {
 					content: ' ';
 					border-bottom: 2px solid transparent;
@@ -165,13 +162,14 @@ p {
 			}
 			&.lang {
 				a {
-					margin-left: 3em;
+					margin-left: 14em;
+					padding: 0.7rem 0;
 				}
 			}
 		}
 	}
 	.top-bar-right {
-		margin-top: 1em;
+		margin-bottom: 1em;
 	}
 }
 .featHome {
@@ -180,8 +178,11 @@ p {
 }
 section {
 	&.somos {
-		height: 100%;
-		background-image: url('../assets/img/somos.png');
+		background-image: url("../assets/img/somos.png");
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    height: 100%;
 		.info {
 			margin-top: 22.5%;
 		}
@@ -349,7 +350,7 @@ footer {
 	font-family: 'Open Sans', sans-serif;
 	padding: 2em 0;
 	p {
-		font-size: 0.55em;
+		font-size: 7.65px;
 		margin-bottom: 0.75em;
 	}
 	.legal {
@@ -357,7 +358,7 @@ footer {
 		a {
 			font-weight: 800;
 			color: $white;
-			font-size: 0.65em;
+			font-size: 0.425em;
 			&:last-child {
 				margin-left: 2em;
 			}
@@ -369,4 +370,26 @@ footer {
 			margin-left: 1em;
 		}
 	}
+}
+
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 1s opacity;
+
+  background-image: url("../assets/img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.sticky {
+	bottom: 2em;
 }

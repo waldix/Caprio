@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div class="content">
+    <div class="content" data-sticky-container>
       
       <section class="servicios">
         <div class="row">
@@ -42,10 +42,15 @@
               </p>
             </div>
           </div>
+          <div class="sticky" id="sticky-magellan">
+            <nav data-magellan data-sticky data-anchor="exampleId" data-sticky-on="large">
+              <a href="#sticky-navigation" class="active"><img src="assets/img/arrow-down.png"></a>
+            </nav>
+          </div>
         </div>
       </section>
 
-      <section class="servs-list">
+      <section class="servs-list" id="sticky-navigation" data-magellan-target="sticky-navigation">
         <div class="expanded row">
 
           <div class="expanded row empleados">
@@ -159,7 +164,7 @@
               <a href="#"><img src="assets/img/in.png"></a>
               <a href="#"><img src="assets/img/tw.png"></a>
             </div>
-            <p class="geo" style="font-size: 0.75em;">Website diseñado por Owner</p>
+            <p class="geo" style="font-size: 0.65em;">Website diseñado por Owner</p>
           </div>
         </div>
       </footer>
