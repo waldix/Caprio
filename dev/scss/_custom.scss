@@ -66,13 +66,18 @@ h1 {
 	font-size: 7.35rem;
 	line-height: 1em;
 	white-space: nowrap;
+	@media (max-width: 810px) {
+		white-space: normal;
+		font-size: 4em;
+	}
 }
 p {
 	// font-size: 0.85em;
 	&.subtitle {
 		font-size: 1.9em;
 		color: $gray;
-		line-height: 1.25em;
+		line-height: 1.35em;
+		margin: 1.35rem 0 1rem;
 		&:after {
 			content: ' ';
 			border-bottom: 4px solid $red;
@@ -177,6 +182,20 @@ p {
 	margin-top: 20%;
 	color: $white;
 }
+.info {
+	p {
+		padding-right: 25%;
+		@media (max-width: 810px) {
+			padding-right: 0;
+			font-size: 0.75em;
+		}
+		&.subtitle {
+			@media (max-width: 810px) {
+				font-size: 1.25em;
+			}
+		}
+	}
+}
 section {
 	&.somos {
 		background-image: url("../assets/img/somos.png");
@@ -246,10 +265,10 @@ section {
 			}
 		}
 		.clients-list {
+			padding-left: 5em;
 			.row {
 				.columns {
-					margin: 2em 0;
-					margin: 2em 0 5em;
+					margin: 4em 0 3em;
 					text-align: center;
 					img {
 						vertical-align: bottom;
@@ -261,9 +280,12 @@ section {
 	&.oficinas {
 		padding: 5em 0;
 		background-image: url('../assets/img/map.png');
-	    background-size: contain;
+	    background-size: 60%;
 	    background-repeat: no-repeat;
-	    background-position: right center;
+	    background-position: right top;
+	    @media (max-width: 810px) {
+	    	background-size: contain;
+	    }
 	    .info {
 	    	ul {
 	    		list-style: none;
