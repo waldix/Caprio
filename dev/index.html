@@ -13,29 +13,62 @@
       <source src="assets/video/video-bg.mp4" type="video/mp4">
       <source src="assets/video/video-bg.ogv" type="video/ogg">
     </video>
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <a href="index.html"><img src="assets/img/CAPRIO-ASSICURAZIONI-W.png" alt="CAPRIO ASSICURAZIONI"></a>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="somos.html">Somos</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="clientes.html">Clientes</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li class="lang"><a href="#">Esp</a></li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="content">
-      <div class="row">
-        <div class="featHome column text-center fade-in" data-toggler data-animate="fade-in">
-          <h2>Protección<span>/</span>Acción<span>/</span>Confianza</h2>
-          <p class="geoit">Agencia de seguros • Control de riesgos</p>
+    <div class="off-canvas-wrapper">
+
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+
+          <!-- Close button -->
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <!-- Menu -->
+          <ul class="vertical menu">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="somos.html">Somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="lang"><a href="#">Esp</a></li>
+          </ul>
+
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <div class="top-bar">
+            <div class="top-bar-left">
+              <a href="index.html"><img src="assets/img/CAPRIO-ASSICURAZIONI-W.png" alt="CAPRIO ASSICURAZIONI"></a>
+            </div>
+            <div class="openMain right">
+              <button type="button" class="menu-icon" data-toggle="offCanvas"></button>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="somos.html">Somos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="lang"><a href="#">Esp</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="row">
+              <div class="featHome column text-center fade-in" data-toggler data-animate="fade-in">
+                <h2>Protección<span>/</span>Acción<span>/</span>Confianza</h2>
+                <p class="geoit">Agencia de seguros • Control de riesgos</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
     </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
