@@ -223,7 +223,7 @@ p {
 }
 .info {
 	p {
-		padding-right: 25%;
+		padding-right: 12.5%;
 		@media (max-width: 810px) {
 			padding-right: 0;
 			font-size: 0.75em;
@@ -274,7 +274,7 @@ section {
 					}
 				}
 				.subtitle {
-					font-size: 1.15em;
+					font-size: 1.1em;
 					margin: 0 0 1rem;
 					@media (max-width: 810px) {
 						font-size: 1em;
@@ -323,6 +323,11 @@ section {
 			span {
 				color: $gray;
 				text-decoration: line-through;
+			}
+		}
+		.info {
+			p {
+			    padding-right: 2.5%;
 			}
 		}
 		.clients-list {
@@ -530,4 +535,11 @@ video {
 }
 .off-canvas {
 	background: rgba(0,0,0,0.65);
+}
+.orbit-next {
+	right: -25%;
+	@include smooth
+}
+.orbit-next:hover, .orbit-next:active, .orbit-next:focus {
+	background-color: rgba(10,10,10,0.1);
 }
