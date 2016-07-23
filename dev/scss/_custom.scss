@@ -239,10 +239,12 @@ section {
 	&.somos {
 		background-image: url("../assets/img/somos.png");
 	    background-size: cover;
-	    background-position: right bottom;
+	    background-position: center;
 	    background-repeat: no-repeat;
+	    background-attachment: fixed;
 	    height: 100%;
 	    position: relative;
+	    padding-bottom: 10em;
 		.info {
 			margin-top: 22.5%;
 			@media (max-width: 638px) {
@@ -491,19 +493,15 @@ video {
 
 .off-canvas-content {
 	background: transparent;
-	height: 100%;
 	box-shadow: none;
 	padding: 0;
 	min-height: inherit;
 }
 .off-canvas-wrapper {
-	height: 100%;
 }
 .off-canvas-wrapper-inner {
-	height: 100%;
 }
 .off-canvas.position-left {
-	height: 100%;
 	.menu {
 		padding-top: 3em;
 		li {
