@@ -360,6 +360,7 @@ section {
 	    background-size: 60%;
 	    background-repeat: no-repeat;
 	    background-position: right top;
+	    background-attachment: fixed;
 	    @media (max-width: 638px) {
 	    	background-image: none;
 	    }
