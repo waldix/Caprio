@@ -218,7 +218,7 @@ p {
 	}
 }
 .featHome {
-	margin-top: 20%;
+	margin-top: 15%;
 	color: $white;
 }
 .info {
@@ -295,6 +295,12 @@ section {
 	&.servicios {
 		height: 100%;
 		background-image: url('../assets/img/servicios.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		position: relative;
+		padding-bottom: 10em;
 		.info {
 			margin-top: 22.5%;
 		}
