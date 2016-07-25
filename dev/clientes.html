@@ -9,150 +9,180 @@
     <link rel="stylesheet" href="css/animate.min.css">
   </head>
   <body>
+    <div class="off-canvas-wrapper">
     
-    <div class="top-bar fixed">
-      <div class="top-bar-left">
-        <a href="index.html"><img src="assets/img/CAPRIO-ASSICURAZIONI.png" alt="CAPRIO ASSICURAZIONI"></a>
-      </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="somos.html">Somos</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="clientes.html" class="active">Clientes</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li class="lang"><a href="#">Esp</a></li>
-        </ul>
-      </div>
-    </div>
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
 
-    <div class="content">
+          <!-- Close button -->
+          <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
 
-      <section class="clientes">
-        <div class="row">
-          <div class="small-12 medium-12 large-6 columns">
-            <div class="info">
-              <div class="wow fadeInLeft" data-wow-duration="1s">
-                <h1>Nuestros</h1>
-              </div>
-              <div class="wow fadeInLeft" data-wow-duration="2s">
-                <p class="subtitle geob"><span>Clientes</span> Socios</p>
-              </div>
-              <div class="wow fadeInLeft" data-wow-duration="2.25s">
-                <p class="geo">
-                  Nuestra amplia cartera de clientes nos respalda. Contamos con la experiencia, la capacidad y el compromiso para resolver cualquier siniestro en todo momento. Nuestro sello es sinónimo de excelencia y responsabilidad.
-                </p>
-              </div>
+          <!-- Menu -->
+          <ul class="vertical menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="somos.html">Somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="clientes.html" class="active">Clientes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="lang"><a href="#">Esp</a></li>
+          </ul>
+
+        </div>
+
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <div class="top-bar fixed">
+            <div class="top-bar-left">
+              <a href="index.html"><img src="assets/img/CAPRIO-ASSICURAZIONI.png" alt="CAPRIO ASSICURAZIONI"></a>
             </div>
-          </div>
-          <div class="small-12 medium-12 large-6 columns">
-            <div class="wow flipInY" data-wow-duration="2s">
-            <div class="clients-list orbit" role="region" aria-label="Customers List" data-orbit>
-              <button class="orbit-next"><img src="assets/img/arrow-next.png"></button>
-              <ul class="orbit-container">
-
-                <li class="orbit-slide is-active">
-                  <div class="row">
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/tous.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/lacoste.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/singer.png">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/benetton.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/luxottica.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/maxmara.png">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/ferragamo.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/alfaparf.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/zegna.png">
-                    </div>
-                  </div>
-                </li>
-                
-                <li class="orbit-slide">
-                  <div class="row">
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/AM.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/BELFIORE.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/CAMPO-BELLA.png">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/DIALOGICS.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/GENWORTH.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/GRECARGO.png">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/LOVATO-ELECTRIC.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/NETTISSMO.png">
-                    </div>
-                    <div class="small-4 columns">
-                      <img src="assets/img/clientes/QUALEM.png">
-                    </div>
-                  </div>
-                </li>
-
+            <div class="openMain right">
+              <button type="button" class="menu-icon dark" data-toggle="offCanvas"></button>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="somos.html">Somos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="clientes.html" class="active">Clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="lang"><a href="#">Esp</a></li>
               </ul>
-
-            </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <footer>
-        <div class="row">
-          <div class="small-12 medium-9 large-9 columns">
-            <div class="legal">
-              <a href="#">TÉRMINOS Y CONDICIONES</a>
-              <a href="#">POLÍTICAS DE PRIVACIDAD</a>
-            </div>
-            <p class="geo">© 2016 Caprio Asiccurasioni todos los derechos reservados. Ciudad de México</p>
-            <p class="geo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,</p>
-          </div>
-          <div class="small-12 medium-3 large-3 columns text-right">
-            <div class="social">
-              <a href="#"><img src="assets/img/fb.png"></a>
-              <a href="#"><img src="assets/img/in.png"></a>
-              <a href="#"><img src="assets/img/tw.png"></a>
-            </div>
-            <p class="geo" style="font-size: 0.65em;">Website diseñado por Owner</p>
-          </div>
-        </div>
-      </footer>
+          <div class="content" data-sticky-container>
 
+            <section class="clientes">
+              <div class="row">
+                <div class="small-12 medium-12 large-6 columns">
+                  <div class="info">
+                    <div class="wow fadeInLeft" data-wow-duration="1s">
+                      <h1>Nuestros</h1>
+                    </div>
+                    <div class="wow fadeInLeft" data-wow-duration="2s">
+                      <p class="subtitle geob"><span>Clientes</span> Socios</p>
+                    </div>
+                    <div class="wow fadeInLeft" data-wow-duration="2.25s">
+                      <p class="geo">
+                        Nuestra amplia cartera de clientes nos respalda. Contamos con la experiencia, la capacidad y el compromiso para resolver cualquier siniestro en todo momento. Nuestro sello es sinónimo de excelencia y responsabilidad.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-12 medium-12 large-6 columns">
+                  <div class="wow flipInY" data-wow-duration="2s">
+                  <div class="clients-list orbit" role="region" aria-label="Customers List" data-orbit>
+                    <button class="orbit-next"><img src="assets/img/arrow-next.png"></button>
+                    <ul class="orbit-container">
+
+                      <li class="orbit-slide is-active">
+                        <div class="row">
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/tous.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/lacoste.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/singer.png">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/benetton.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/luxottica.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/maxmara.png">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/ferragamo.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/alfaparf.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/zegna.png">
+                          </div>
+                        </div>
+                      </li>
+                      
+                      <li class="orbit-slide">
+                        <div class="row">
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/AM.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/BELFIORE.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/CAMPO-BELLA.png">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/DIALOGICS.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/GENWORTH.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/GRECARGO.png">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/LOVATO-ELECTRIC.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/NETTISSMO.png">
+                          </div>
+                          <div class="small-4 columns">
+                            <img src="assets/img/clientes/QUALEM.png">
+                          </div>
+                        </div>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <footer>
+              <div class="row">
+                <div class="small-12 medium-9 large-9 columns">
+                  <div class="legal">
+                    <a href="#">TÉRMINOS Y CONDICIONES</a>
+                    <a href="#">POLÍTICAS DE PRIVACIDAD</a>
+                  </div>
+                  <p class="geo">© 2016 Caprio Asiccurasioni todos los derechos reservados. Ciudad de México</p>
+                  <p class="geo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet,</p>
+                </div>
+                <div class="small-12 medium-3 large-3 columns text-right">
+                  <div class="social">
+                    <a href="#"><img src="assets/img/fb.png"></a>
+                    <a href="#"><img src="assets/img/in.png"></a>
+                    <a href="#"><img src="assets/img/tw.png"></a>
+                  </div>
+                  <p class="geo" style="font-size: 0.65em;">Website diseñado por Owner</p>
+                </div>
+              </div>
+            </footer>
+
+          </div>
+
+      </div>
     </div>
+  </div>
 
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
