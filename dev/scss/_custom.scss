@@ -337,7 +337,7 @@ section {
 			ul {
 				list-style: none;
 				margin-left: 0;
-				font-size: 0.75em;
+				font-size: 1em;
 				li {
 					margin-bottom: 0.5em;
 				}
@@ -522,6 +522,8 @@ video {
   background-repeat: no-repeat;
 }
 .sticky {
+	width: 100%;
+	text-align: center;
 	-webkit-animation: anim-arrow 2s infinite; /* Safari 4+ */
   -moz-animation:    anim-arrow 2s infinite; /* Fx 5+ */
   -o-animation:      anim-arrow 2s infinite; /* Opera 12+ */
